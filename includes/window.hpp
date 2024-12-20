@@ -1,5 +1,5 @@
 #include <string>
-#include <raylib.h>
+#include <raylib/raylib.hpp>
 #include <screen.hpp>
 #include <vector>
 
