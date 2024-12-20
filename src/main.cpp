@@ -14,9 +14,14 @@ int main(){
 
     window.setFPS(60);
 
-    window.List.push_back(LoadTexture("bars-solid.png"));
+    Texture2D txt = LoadTexture("bars-solid.png");
+    if(IsTextureValid(txt))
+        window.List.push_back(txt);
+    else
+        return 1;
 
     runLoop(window, AppMain);
 
     window.destroy();
+    return 0;
 }
